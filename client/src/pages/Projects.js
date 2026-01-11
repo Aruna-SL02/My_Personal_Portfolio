@@ -14,7 +14,7 @@ const Projects = () => {
       title: "Personal Portfolio",
       description: "My first Full-Stack MERN application. It showcases my skills, projects, and contact info dynamically.",
       tech: ["MongoDB", "Express", "React", "Node.js"],
-      githubLink: "https://github.com/YOUR_USERNAME/my-portfolio", 
+      githubLink: "https://github.com/Aruna-SL02/My_Personal_Portfolio", 
       demoLink: "/" 
     },
     {
