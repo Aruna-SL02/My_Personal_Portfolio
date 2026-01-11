@@ -1,0 +1,81 @@
+.footer {
+  /* NEW: Gradient Background */
+  background: var(--grad-dark);
+  
+  color: #888;
+  padding: 40px 20px; /* Increased padding for better look */
+  text-align: center;
+  
+  /* NEW: Gradient Top Border */
+  border-top: 3px solid transparent;
+  border-image: var(--grad-orange);
+  border-image-slice: 1;
+  
+  font-size: 0.9rem;
+  margin-top: 0; /* Ensures it sits tight against the last section */
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.copyright strong {
+  /* Gradient Text for your Name in Footer */
+  background: var(--grad-orange);
+  
+  /* Required for Chrome/Safari/Edge */
+  -webkit-background-clip: text;
+  
+  /* The Standard Property (Fixes the warning) */
+  background-clip: text;
+  
+  /* Makes the text transparent so the background shows through */
+  -webkit-text-fill-color: transparent;
+  color: transparent; /* Good fallback to add */
+  
+  font-weight: 800;
+}
+
+.credit {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+}
+
+.credit strong {
+  color: var(--accent);
+}
+
+/* Icons */
+.icon-code { color: var(--accent); }
+.icon-heart {
+  color: #ff4757;
+  animation: beat 1s infinite alternate;
+}
+
+/* Scroll to Top Link */
+.scroll-top {
+  margin-top: 15px;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.8rem;
+  border: 1px solid var(--accent);
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.scroll-top:hover {
+  background: var(--grad-orange); /* Button fills with gradient on hover */
+  color: #000;
+  border-color: transparent;
+}
+
+@keyframes beat {
+  to { transform: scale(1.2); }
+}

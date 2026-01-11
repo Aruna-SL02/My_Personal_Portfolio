@@ -1,0 +1,12 @@
+# Dependency directories
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Secrets (NEVER upload these)
+.env
+.DS_Store
+
+# Build outputs
+dist/
+build/

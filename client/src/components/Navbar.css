@@ -1,0 +1,99 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+  
+  /* NEW: Gradient Background */
+  background: var(--grad-dark);
+  
+  /* NEW: Gradient Bottom Border */
+  border-bottom: 3px solid transparent;
+  border-image: var(--grad-orange);
+  border-image-slice: 1;
+  
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+/* Gradient Logo Text */
+.navbar-logo a {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  
+  /* The Magic for Gradient Text */
+  background: var(--grad-orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: var(--text-main);
+  font-weight: 700;
+  transition: color 0.3s;
+  position: relative;
+  font-size: 18px;
+}
+
+/* Hover effect for links */
+.navbar-links a:hover {
+  color: var(--accent);
+}
+
+/* Optional: Mobile responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px 20px;
+    gap: 15px;
+  }
+}
+
+
+/*
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000; 
+  border-bottom: 3px solid #333;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.navbar-logo a {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff; 
+}
+
+.navbar-links {
+  list-style: none; 
+  display: flex;
+  font-weight: bold;
+  gap: 20px; 
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: var(--accent);
+}
+*/
